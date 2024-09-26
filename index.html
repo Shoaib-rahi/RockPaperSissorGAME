@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+h1{
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #2C1B6A;
+}
+.choice{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all .4s ease-in-out;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.choice img:hover{
+  transform: scale(90%);
+}
+
+.choices{
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scord-board{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 6rem;
+}
+.scord-board #user-score,#comp-score{
+  font-size: 4rem;
+}
+.msg{
+  background-color: #2C1B6A;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.msg-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+}
+</style>
+<body>
+<h1>rock paper and scissors</h1>
+<div class="choices">
+  <div class="choice" id="rock">
+  <img src="images/rock.png" alt="">
+</div>
+<div class="choice" id="paper">
+  <img src="images/paper.png" alt="">
+</div>
+<div class="choice" id="scissor">
+  <img src="images/scissors1.jpeg" alt="">
+</div>
+</div>
+
+
+<div class="scord-board">
+  <div class="score">
+    <p id="user-score">0</p>
+    <p>your</p>
+  </div>
+  <div class="compscore">
+    <p id="comp-score">0</p>
+    <p>your</p>
+  </div>
+</div>
+<div class="msg-container">
+  <div class="msg">your move</div>
+</div>
+<script src="gaming.js"></script>
+</body>
+</html>
